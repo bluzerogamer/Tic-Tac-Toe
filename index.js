@@ -18,12 +18,23 @@ let currentPlayer = "X";
 let running = false;
 
 initializeGame();
+colorPlayer();
 
 function initializeGame(){
     cells.forEach(cell => cell.addEventListener("click", cellClicked))
     restartbtn.addEventListener("click", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
     running = true;
+}
+
+function colorPlayer(){
+    if (currentPlayer = "X"){
+        document.getElementById(statusText).style.color = "red";
+    }
+
+    else if (currentPlayer = "O"){
+        document.getElementById(statusText).style.color = "blue";
+    }
 }
 
 function cellClicked(){

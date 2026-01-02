@@ -29,4 +29,11 @@
     font-weight: bold;
     padding: 10px 26px;
     cursor: pointer;
+    transition: 1s;
+}
+
+#restartbtn:hover {
+    background-color: purple;
+    color: whitesmoke;
+    transition: 1s;
 }
